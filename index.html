@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Spill</title>
+    <link rel="stylesheet" href="./styling.css">
+</head>
+
+<body>
+    <div class="heading" id="f-heading">BILL</div>
+    <div class="heading " id="s-heading">SPILL</div>
+
+    <div class="container">
+        <div class="left">
+            <h5 class="headingStyle1">Bill</h5>
+            <input type="number" class="amount" id="amount" placeholder="0">
+            <h5 class="headingStyle1 Select-tip">Select Tip %</h5>
+            <div class="grid-container">
+                <button class="grid-item" onclick="g1()" id="g1">5%</button>
+                <button class="grid-item" onclick="g2()" id="g2">10%</button>
+                <button class="grid-item" onclick="g3()" id="g3">20%</button>
+                <button class="grid-item" onclick="g4()" id="g3">25%</button>
+                <button class="grid-item" onclick="g5()" id="g4">50%</button>
+                <button class="grid-item" onclick="g6()" id="g5">75%</button>
+            </div>
+            <h5 class="headingStyle1 marg" id="error">Number of People</h5>
+            <div class="lb">
+                <input type="number" class="NumberOfPeople" id="NumberOfPeople">
+                <span class="increment" id="increment">
+                    <span class="btn-item">+</span>
+                    <span class="btn-item num">0</span>
+                    <span class="btn-item">-</span>
+
+                </span>
+
+            </div>
+            <button class="GB" id="GB" onclick="generate()">Generate Bill</button>
+        </div>
+        <div class="right">
+            <div class="tip-amount">
+                <span class="RT">
+                    <label class="L1">Tip Amount</label>
+                    <label class="L2">/ person</label>
+                </span>
+
+                <label class="TT" id="TA">₹0.00</label>
+            </div>
+            <div class="total">
+                <span class="RB">
+                    <label class="L1">Total</label>
+                    <label class="L2">/ person</label>
+                </span>
+                <label id="TT">₹0.00</label>
+            </div>
+            <button class="reset" id="reset" onclick="reset()">RESET</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

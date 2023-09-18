@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600&family=Inconsolata:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600&family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --x: #9C60FF;
+
+    --y: #C39FFF;
+}
+
+body {
+    background: var(--y);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading {
+    font-family: DM Sans;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0.625em;
+    text-align: left;
+    color: var(--x);
+}
+
+#f-heading {
+    margin-top: 100px;
+}
+
+#s-heading {
+    margin-bottom: 60px;
+}
+
+.container {
+    width: 818px;
+    height: 494px;
+    top: 258px;
+    left: 230px;
+    border-radius: 21px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.headingStyle1 {
+
+    top: 300px;
+    left: 273px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 16px;
+    letter-spacing: 0.045em;
+    text-align: left;
+    color: var(--x);
+
+
+}
+
+.left {
+    width: 40%;
+    height: 80%;
+}
+
+.right {
+
+    width: 290px;
+    height: 300px;
+    top: 325px;
+    left: 641px;
+    border-radius: 11px;
+    background: #9C60FF;
+    padding: 5%;
+
+
+}
+
+#amount {
+
+    width: 317px;
+    height: 43px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    background: #B6ACC387 url(./resources/rupee.png) left center no-repeat;
+    background-position-x: 30px;
+    font-family: Monospaceland;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    text-align: right;
+    margin-top: 10px;
+    padding-right: 10px;
+    color: #9C60FF;
+
+}
+
+::placeholder {
+    color: #9C60FF;
+    font-family: monospace;
+    margin-right: 5px;
+}
+
+.Select-tip {
+    margin-top: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2);
+    gap: 10px;
+    margin-top: 10px;
+
+
+}
+
+.grid-item {
+    background: var(--x);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 10px;
+    font-family: Monospaceland;
+    letter-spacing: 0.01em;
+    color: rgb(216, 224, 249);
+    font-size: 21px;
+    cursor: pointer;
+    border: none;
+}
+.grid-item:hover{
+    border: 5px solid blue;
+    padding: 5px;
+}
+
+.marg {
+    margin-top: 45px;
+}
+
+.NumberOfPeople {
+    height: 43px;
+    outline: none;
+    border: none;
+    background: #B6ACC387 url(./resources/Vector.png) left center no-repeat;
+    background-position-x: 15px;
+    width: 60%;
+    border-radius: 3px;
+    font-family: Monospaceland;
+    font-size: 21px;
+    color: var(--x);
+    text-align: right;
+
+}
+
+
+.btn-item {
+    padding: 12px;
+    font-style: bold;
+    font-weight: bold;
+    font-family: 'Inconsolata', monospace;
+
+}
+
+.num {
+    padding: 8px 20px;
+    border-left: 1px solid #8F8F8F;
+    ;
+    border-right: 1px solid #8F8F8F;
+    ;
+    color: #9C60FF;
+
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+
+}
+
+.GB {
+    font-family: Inconsolata;
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #8F8F8F;
+    background: #FBFAFB;
+    margin-top: 15px;
+    height: 46px;
+    width: 100%;
+    border-radius: 9px;
+    border: none;
+    box-shadow: 0px 1px 6px 0px #0000006E;
+    font-family: 'Inconsolata', monospace;
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+
+
+}
+
+.L1 {
+    font-family: Inconsolata;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0.045em;
+    text-align: left;
+    color: #F3E4FF;
+
+
+}
+
+.L2 {
+    font-family: Inconsolata;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 0.045em;
+    text-align: left;
+    color: #F3E4FF;
+
+
+}
+
+.TT {
+    font-family: 'Inconsolata', monospace;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.01em;
+    text-align: left;
+
+    font-family: Inconsolata;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 0.01em;
+    text-align: left;
+
+    font-family: Monospaceland;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.045em;
+    text-align: left;
+
+    font-family: Inconsolata;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 0.045em;
+    text-align: left;
+    color: #C39FFF;
+    margin-left: 95px;
+
+}
+
+.reset {
+    width: 295px;
+    height: 43px;
+    top: 617px;
+    left: 682px;
+    border-radius: 5px;
+    font-family: DM Sans;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.19em;
+    background: #C39FFF;
+    border: none;
+    color: #9C60FF;
+    margin-top: 130px;
+}
+.RT{
+    display: flex;
+    flex-direction: column;
+}
+.tip-amount{
+    display: flex;
+}
+
+.RB{
+    display: flex;
+    flex-direction: column;
+}
+.total{
+    display: flex;
+    margin-top: 50px;
+}
+#TT{
+    margin-left:95px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.01em;
+    text-align: left;
+
+    font-family: Inconsolata;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 0.01em;
+    text-align: left;
+
+    font-family: Monospaceland;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.045em;
+    text-align: left;
+
+    font-family: Inconsolata;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 0.045em;
+    text-align: left;
+    color: #C39FFF;
+    margin-left:135px;
+}
